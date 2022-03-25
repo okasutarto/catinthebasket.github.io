@@ -112,6 +112,7 @@ function subscribe(){
         
         localStorage.setItem('sub',true);
         sub=localStorage.getItem('sub');
+        console.log(localStorage.getItem('sub')+"      <<");
         generateSound(sub);
     }else if(sub=="true"){
         unsub();      
