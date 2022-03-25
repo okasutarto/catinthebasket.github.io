@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Musics</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="containermain" class="container">
+        <div class="navbar">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li onclick="subscribe()">Subscribe</li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Connect</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-coloum">
+                <h1>DAFTAR LAGU</h1>
+                <ul id="track">
+                   <li><a href="#">Beat it</a><img src="media/pngwing.com.png" class="icon"></li>
+                   <li><a href='#'>Talking to The Moon</a><img src="media/pngwing.com.png" class="icon"></li> 
+                   <li><a href='#'>I Love You So</a><img src="media/pngwing.com.png" class="icon"></li> 
+                   <li><a href='#'>Money Trees</a><img src="media/pngwing.com.png" class="icon"></li> 
+                   <li><a href='#'>Stand By Me</a><img src="media/pngwing.com.png" class="icon"></li> 
+                   <li><a href='#'>That's Life</a><img src="media/pngwing.com.png" class="icon"></li> 
+                </ul>
+            </div>
+            <div class="mid-coloum">
+                <audio id="audio" controls="controls">
+                    <source id="trackplayer2" src="s2.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+            </div>
+            <div class="right-coloum">
+                <h1>DAFTAR FAVOURITE</h1>
+                <ul id="fav">
+                    <li><a href='#'>Stand By Me</a><img src="media/red-x-emoji-png-png-image-326979.jpeg" class="icon2" ></li>
+                    <li><a href='#'>That's Life</a><img src="media/red-x-emoji-png-png-image-326979.jpeg" class="icon2" ></li> 
+                    <li><a href='#'>Beat it</a><img src="media/red-x-emoji-png-png-image-326979.jpeg" class="icon2"></li> 
+                </ul>
+        </div>
+    </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
