@@ -108,7 +108,7 @@ function subscribe(){
             generateSound("sub");
         }
     }*/
-    if(sub=="false"){
+    if(sub=="false"||sub=="null"){
         
         localStorage.setItem('sub',true);
         sub=localStorage.getItem('sub');
