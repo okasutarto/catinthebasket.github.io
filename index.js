@@ -108,7 +108,7 @@ function subscribe(){
             generateSound("sub");
         }
     }*/
-    if(sub=="false"||sub=="null"){
+    if(sub=="false"||sub=="null"||sub==null){
         
         localStorage.setItem('sub',true);
         sub=localStorage.getItem('sub');
@@ -160,6 +160,10 @@ function initNama(){
     console.log(document.getElementById("namaUser"));
     document.getElementById("namaUser").innerHTML=localStorage.getItem('user');
     sub=localStorage.getItem('sub');
+    if(!sub||sub==null||sub=="null"){
+        sub="false";
+        localStorage.setItem('sub',false);
+    }
 }
 
 function logout(){
