@@ -108,15 +108,16 @@ function subscribe(){
             generateSound("sub");
         }
     }*/
-    if(!sub){
+    if(sub=="false"){
         
         localStorage.setItem('sub',true);
+        sub=localStorage.getItem('sub');
         generateSound(sub);
-    }else{
+    }else if(sub=="true"){
         unsub();      
         localStorage.setItem('sub',false);  
+        sub=localStorage.getItem('sub');
     }
-    sub=!sub;
 }
 function favorite(title){
     for(let i=0;i<track.length;i++){
