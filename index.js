@@ -18,6 +18,7 @@ function generateSound(status){
             generateFav;
         }*/
     }
+    console.log("status: "+status)
     if(status=="true"){
         console.log("status: "+status)
         for(let i=0;i<laguSub.length;i++){
