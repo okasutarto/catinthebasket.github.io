@@ -18,7 +18,7 @@ function generateSound(status){
             generateFav;
         }*/
     }
-    if(status!="false"){
+    if(status=="true"){
         console.log("status: "+status)
         for(let i=0;i<laguSub.length;i++){
             track.push(laguSub[i]);
