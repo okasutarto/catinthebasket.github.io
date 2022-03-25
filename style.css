@@ -98,3 +98,11 @@
 .img{
     display: inline-block;
 }
+.kontainer{
+    height: 100vh;
+    width: 100%;
+    background-image: url(media/image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
