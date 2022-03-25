@@ -12,9 +12,13 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="style.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Lato';
     }
 
     .kontener {
@@ -36,6 +40,7 @@
       display: none;
       width: 400px;
     }
+
     #form-reg {
       display: none;
       width: 400px;
@@ -44,46 +49,50 @@
 </head>
 
 <body>
-  
-    <div id="containermain" class="kontainer" style="display:none">
-        <div class="navbar">
 
-            <ul>
-                <li id="namaUser">Home</li>
-                <li><a href="team/meetTheTeam.html">About</a></li>
-                <li onclick="subscribe()">Subscribe</li>
-                <li><a href="#">Product</a></li>
-                <li onclick="logout()">Log Out</li>
-            </ul>
-        </div>
-        <div class="content">
-            <div class="left-coloum">
-                <h1>DAFTAR LAGU</h1>
-                <ul id="track">
-                   <li><a href="#">Beat it</a><img src="media/pngwing.com.png" class="icon"></li>
-                   <li><a href='#'>Talking to The Moon</a><img src="media/pngwing.com.png" class="icon"></li> 
-                   <li><a href='#'>I Love You So</a><img src="media/pngwing.com.png" class="icon"></li> 
-                   <li><a href='#'>Money Trees</a><img src="media/pngwing.com.png" class="icon"></li> 
-                   <li><a href='#'>Stand By Me</a><img src="media/pngwing.com.png" class="icon"></li> 
-                   <li><a href='#'>That's Life</a><img src="media/pngwing.com.png" class="icon"></li> 
-                </ul>
-            </div>
-            <div class="mid-coloum">
-                <audio id="audio" controls="controls">
-                    <source id="trackplayer2" src="s2.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                  </audio>
-            </div>
-            <div class="right-coloum">
-                <h1>DAFTAR FAVOURITE</h1>
-                <ul id="fav">
-                </ul>
-        </div>
+  <div id="containermain" class="kontainer" style="display:none">
+    <div class="navbar" style="font-weight: bold;">
+
+      <ul>
+        <li id="namaUser">Home</li>
+        <li><a href="team/meetTheTeam.html" style="color: black;">Teams</a></li>
+        <li onclick="subscribe()">Subscribe</li>
+        <li onclick="logout()">Log Out</li>
+      </ul>
     </div>
-        </div>
+    <div class="content">
+      <div class="left-coloum" style="font-weight: bold;">
+        <h1 style="font-family: 'Lato';
+        font-weight: bold; display: flex; justify-content: center;">Daftar Lagu</h1>
+        <ol id="track">
+          <li><a href="#">Beat it</a><img src="media/pngwing.com.png" class="icon"></li>
+          <li><a href='#'>Talking to The Moon</a><img src="media/pngwing.com.png" class="icon"></li>
+          <li><a href='#'>I Love You So</a><img src="media/pngwing.com.png" class="icon"></li>
+          <li><a href='#'>Money Trees</a><img src="media/pngwing.com.png" class="icon"></li>
+          <li><a href='#'>Stand By Me</a><img src="media/pngwing.com.png" class="icon"></li>
+          <li><a href='#'>That's Life</a><img src="media/pngwing.com.png" class="icon"></li>
+        </ol>
+      </div>
+      <div class="mid-coloum">
+        <audio id="audio" controls="controls">
+          <source id="trackplayer2" src="s2.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="right-coloum">
+        <h1
+          style="font-family: 'Lato'; font-weight: bold; display: flex; justify-content: center; width: -webkit-fill-available; ">
+          Daftar Favourite
+        </h1>
+        <ol id="fav">
+        </ol>
+      </div>
+    </div>
+  </div>
   <div id="containerlogin" class="kontener container-fluid position-relative" style="padding-top: 200px;">
     <div class="position-absolute top-0 end-0">
-      <button type="button" class="btn d-flex" style="background-color: #f07969; margin: 20px 20px 0px 0px" onclick="muncul()">
+      <button type="button" class="btn d-flex" style="background-color: #f07969; margin: 20px 20px 0px 0px"
+        onclick="muncul()">
         <strong>Login</strong>
       </button>
     </div>
@@ -116,43 +125,40 @@
               <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
               <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="submit" class="btn btn-danger" onclick="tutup()">Batal</button>
-          </form>
         </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-danger" onclick="tutup()">Batal</button>
+        </form>
       </div>
     </div>
-    <div id="form-reg" class="position-absolute top-50 start-50 translate-middle w3-animate-opacity">
-      <div class="card text-dark mb-3 border-0 rounded" style="max-width: 600px; background-color: #ffb6c1;">
-        <div class="card-header" style="background: none;">
-          <h4><strong>Registrasi</strong></h4>
-        </div>
+  </div>
+  <div id="form-reg" class="position-absolute top-50 start-50 translate-middle w3-animate-opacity">
+    <div class="card text-dark mb-3 border-0 rounded" style="max-width: 600px; background-color: #ffb6c1;">
+      <div class="card-header" style="background: none;">
+        <h4><strong>Registrasi</strong></h4>
+      </div>
 
-        <div class="card-body">
-          <form target="dummyframe" onsubmit="register()">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"><strong>Username</strong></label>
-              <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
-              <div id="emailHelp2" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
-              <input type="password" class="form-control" id="exampleInputPassword2">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="submit" class="btn btn-danger" onclick="tutupReg()">Batal</button>
-          </form>
-        </div>
+      <div class="card-body">
+        <form target="dummyframe" onsubmit="register()">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"><strong>Username</strong></label>
+            <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+            <div id="emailHelp2" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"><strong>Password</strong></label>
+            <input type="password" class="form-control" id="exampleInputPassword2">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-danger" onclick="tutupReg()">Batal</button>
+        </form>
       </div>
     </div>
+  </div>
   </div>
   <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
   <!-- Optional JavaScript; choose one of the two! -->
@@ -167,7 +173,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-    <script src="index.js"></script>
+  <script src="index.js"></script>
   <script>
     function muncul() {
       document.getElementById('form-login').style.display = 'block';
@@ -184,44 +190,44 @@
       document.getElementById('form-reg').style.display = 'none';
     }
 
-    function register(){
-        let username=document.getElementById('exampleInputEmail2').value;
-        let password=document.getElementById('exampleInputPassword2').value;
-        localStorage.setItem("username", username);
-        localStorage.setItem("password", password);
-        localStorage.setItem("user","User Baru");
-        document.getElementById('containerlogin').style.display = 'none';
-        document.getElementById('containermain').style.display = 'block';
-        initNama();
-        resetData();
-        //generateSound(localStorage.getItem('sub'));   
+    function register() {
+      let username = document.getElementById('exampleInputEmail2').value;
+      let password = document.getElementById('exampleInputPassword2').value;
+      localStorage.setItem("username", username);
+      localStorage.setItem("password", password);
+      localStorage.setItem("user", "User Baru");
+      document.getElementById('containerlogin').style.display = 'none';
+      document.getElementById('containermain').style.display = 'block';
+      initNama();
+      resetData();
+      //generateSound(localStorage.getItem('sub'));   
+    }
+
+    function login() {
+      let username = document.getElementById('exampleInputEmail1').value;
+      let password = document.getElementById('exampleInputPassword1').value;
+
+      if (localStorage.getItem("username") && localStorage.getItem("password")) {
+        console.log(localStorage.getItem("username") + " " + username + "       " + localStorage.getItem("password") + " " + password);
+        if (localStorage.getItem("password") == password && localStorage.getItem("username") == username) {
+          if (!localStorage.getItem("sub")) {
+            localStorage.setItem("sub", false);
+          }
+          localStorage.setItem("user", username);
+          document.getElementById('containerlogin').style.display = 'none';
+          document.getElementById('containermain').style.display = 'block';
+          initNama();
+          resetData();
+        }
+        else {
+          //console.log(document.getElementById('emailHelp1'));
+          document.getElementById('emailHelp1').textContent = "MAAF Username atau Password salah";
+        }
+      } else {
+        document.getElementById('emailHelp1').textContent = "MAAF Username atau Password tidak dikenali";
       }
 
-      function login(){
-        let username=document.getElementById('exampleInputEmail1').value;
-        let password=document.getElementById('exampleInputPassword1').value;
-          
-        if(localStorage.getItem("username")&&localStorage.getItem("password")){
-          console.log(localStorage.getItem("username")+" "+username+"       "+localStorage.getItem("password")+" "+password);
-            if(localStorage.getItem("password")==password&&localStorage.getItem("username")==username){
-                if(!localStorage.getItem("sub")){                    
-                    localStorage.setItem("sub",false);                       
-                }
-                localStorage.setItem("user",username);
-                document.getElementById('containerlogin').style.display = 'none';
-                document.getElementById('containermain').style.display = 'block';  
-                initNama();
-                resetData();               
-            }
-            else{
-              //console.log(document.getElementById('emailHelp1'));
-              document.getElementById('emailHelp1').textContent="MAAF Username atau Password salah";
-            }
-        }else{
-          document.getElementById('emailHelp1').textContent="MAAF Username atau Password tidak dikenali";
-        }
-           
-      }
+    }
   </script>
 
 </body>
